@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-Hant">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>個人簡歷 — Your Name</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container header-inner">
+				<h1 class="logo">Your Name</h1>
+				<nav class="nav" aria-label="主要導覽">
+					<a href="#about">關於我</a>
+					<a href="#skills">技能</a>
+					<a href="#experience">經歷</a>
+					<a href="#projects">作品集</a>
+					<a href="#contact">聯絡</a>
+				</nav>
+				<button class="nav-toggle" aria-expanded="false" aria-label="切換選單">☰</button>
+			</div>
+		</header>
+
+		<main>
+			<section id="about" class="section about">
+				<div class="container">
+					<h2>關於我</h2>
+					<p>
+						我是前端工程師 / 設計師，熱衷於建立乾淨且可讀性的網站介面，
+						喜歡將複雜的 UI 拆解為簡單元件並用現代的 CSS 實作。
+					</p>
+				</div>
+			</section>
+
+			<section id="skills" class="section skills">
+				<div class="container">
+					<h2>技能</h2>
+					<p class="muted">以 CSS Grid 排列技能標籤；在桌面為三欄，手機為單欄。</p>
+					<div class="skills-grid" aria-label="技能清單">
+						<span class="skill">HTML</span>
+						<span class="skill">CSS / Grid</span>
+						<span class="skill">JavaScript</span>
+						<span class="skill">React</span>
+						<span class="skill">TypeScript</span>
+						<span class="skill">Accessibility</span>
+						<span class="skill">Responsive Design</span>
+						<span class="skill">Git</span>
+						<span class="skill">Design Systems</span>
+					</div>
+				</div>
+			</section>
+
+			<section id="experience" class="section experience">
+				<div class="container">
+					<h2>經歷</h2>
+					<div class="card-list">
+						<article class="card">
+							<h3>前端工程師 — 公司 A</h3>
+							<p class="muted">2022 — 現在</p>
+							<p>負責主要產品的 UI 與互動，優化首屏載入與可用性。</p>
+						</article>
+						<article class="card">
+							<h3>UI 設計師 — 公司 B</h3>
+							<p class="muted">2020 — 2022</p>
+							<p>設計元件庫與高保真樣式指南，協助團隊一致性開發。</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="section projects">
+				<div class="container">
+					<h2>作品集</h2>
+					<div class="projects-grid">
+						<article class="project">
+							<h3>作品 A</h3>
+							<p class="muted">單頁應用 / RWD</p>
+						</article>
+						<article class="project">
+							<h3>作品 B</h3>
+							<p class="muted">互動展示 / CSS 動畫</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="section contact">
+				<div class="container">
+					<h2>聯絡方式</h2>
+					<p>電子郵件：<a href="mailto:your@email.com">your@email.com</a></p>
+					<p>LinkedIn / GitHub / 其他連結</p>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">© <span id="year"></span> Your Name</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
