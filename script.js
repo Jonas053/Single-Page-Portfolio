@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
   if(stick){
     // animate from left 5% to 85% over 6s, repeat when visible
     const animate = () => {
-      stick.style.transition = 'transform 6s linear';
-      stick.style.transform = 'translateX(calc(80vw))';
+      stick.style.transition = 'transform 4s linear';
+      stick.style.transform = 'translateX(calc(50vw))';
       setTimeout(()=>{
         stick.style.transition = 'none';
-        stick.style.transform = 'translateX(0)';
+        stick.style.transform = 'translateX(calc(50vw))';
       },6100);
     };
 
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const timeline = document.querySelector('.timeline');
     const obs = new IntersectionObserver(entries=>{
       entries.forEach(e=>{
-        if(e.isIntersecting){
+        if(entries[0].isIntersecting){
           animate();
         }
       });
