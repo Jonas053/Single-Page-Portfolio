@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
     // animate from left 5% to 85% over 6s, repeat when visible
     const animate = () => {
       stick.style.transition = 'transform 4s linear';
-      stick.style.transform = 'translateX(calc(50vw))';
+      stick.style.transform = 'translateX(calc(55rem))';
       setTimeout(()=>{
         stick.style.transition = 'none';
-        stick.style.transform = 'translateX(calc(50vw))';
+        stick.style.transform = 'translateX(calc(55rem))';
       },6100);
     };
 
